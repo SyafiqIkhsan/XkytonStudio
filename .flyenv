@@ -1,0 +1,2 @@
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+$env:PATH = "C:\Program Files\FlyEnv-Data\app\php-8.5.7;" + $env:PATH #FlyEnv-ID-G7FweWV7fbs5TEqazlyJiRt7lUp1JzMZ
