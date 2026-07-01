@@ -15,7 +15,7 @@ return new class extends Migration {
             $table->string('tech_stack');
             $table->string('client')->nullable();
             $table->year('year');
-            $table->json('image_path')->nullable(); // Menyimpan array path foto galeri
+            $table->json('image_path')-> nullable;// Menyimpan array path foto galeri
             $table->boolean('is_featured')->default(false);
             $table->timestamps();
         });

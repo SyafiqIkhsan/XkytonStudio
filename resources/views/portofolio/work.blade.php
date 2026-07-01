@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Works - Xkyton')
+@section('title', 'Works')
 
 @section('content')
 <div class="max-w-7xl mx-auto px-6 py-16">
@@ -17,8 +17,8 @@
         <a href="{{ route('portofolio.show', $project->slug) }}" class="group block">
             <article>
                 <div class="w-full bg-neutral-100 aspect-[16/10] mb-4 overflow-hidden flex items-center justify-center text-neutral-400 italic border border-neutral-200/40 group-hover:opacity-90 transition-opacity">
-                    @if ($project->image_path && count(json_decode($project->image_path, true)) > 0)
-                        <img src="{{ asset(json_decode($project->image_path, true)[0]) }}" alt="{{ $project->title }}" class="w-full h-full object-cover">
+                    @if (!empty($projects) && count($projects) > 0)
+                        <img src="{{ Storage::url($project->image_path) }}" alt="{{ $project->title }}" class="w-full h-full object-cover">
                     @else
                         <span class="text-xs uppercase tracking-widest">[ {{ $project->title }} ]</span>
                     @endif

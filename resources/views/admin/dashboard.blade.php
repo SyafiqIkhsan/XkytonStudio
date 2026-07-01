@@ -73,7 +73,7 @@
                 <h3 class="text-base font-semibold uppercase tracking-wider">Deploy New Project</h3>
                 <button onclick="document.getElementById('createModal').classList.add('hidden')" class="text-neutral-400 hover:text-neutral-900 text-lg">&times;</button>
             </div>
-            <form action="{{ route('admin.project.store') }}" method="POST" class="space-y-4 text-xs">
+            <form action="{{ route('admin.project.store') }}" method="POST" enctype="multipart/form-data" class="space-y-4 text-xs">
                 @csrf
                 <div>
                     <label for="title" class="block uppercase tracking-wider font-medium text-neutral-500 mb-1.5">App / Project Name</label>
@@ -93,6 +93,11 @@
                     <label for="description" class="block uppercase tracking-wider font-medium text-neutral-500 mb-1.5">System Architecture / Summary</label>
                     <textarea name="description" id="description" required rows="4" class="w-full border border-neutral-200 p-3 rounded-none focus:outline-none focus:border-neutral-900 resize-none">{{ old('description') }}</textarea>
                 </div>
+                <div>
+                <label for="image" class="block uppercase tracking-wider font-medium text-neutral-500 mb-1.5">Project Photo / Thumbnail</label>
+                <input type="file" name="image" id="image" accept="image/*" class="w-full border border-neutral-200 p-2.5 rounded-none focus:outline-none focus:border-neutral-900 file:mr-4 file:py-1.5 file:px-3 file:border-0 file:text-xs file:font-semibold file:bg-neutral-900 file:text-white hover:file:bg-neutral-800 file:cursor-pointer" value="{{ old('image_path') }}">
+                <p class="text-neutral-400 mt-1 text-[10px]">Format: JPG, PNG, or WEBP. Max 2MB.</p>
+            </div>
                 <div class="flex justify-end gap-3 pt-4 border-t border-neutral-100">
                     <button type="button" onclick="document.getElementById('createModal').classList.add('hidden')" class="border border-neutral-200 px-5 py-3 rounded-none hover:bg-neutral-50 transition-colors">Cancel</button>
                     <button type="submit" class="bg-neutral-900 text-white px-6 py-3 rounded-none hover:bg-neutral-800 transition-colors">Commit Entry</button>
