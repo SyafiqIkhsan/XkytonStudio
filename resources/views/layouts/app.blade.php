@@ -59,7 +59,7 @@
         @yield('content')
     </main>
 
-    <footer class="border-t border-neutral-200/60 bg-[#fcfcfc] py-12 mt-20">
+    <footer class="border-t border-neutral-200/60 bg-[#DDDDDD] py-12 mt-20">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="space-y-1 text-center md:text-left">
                 <h3 class="font-serif text-lg font-medium text-neutral-800">Xkyton Studio</h3>
