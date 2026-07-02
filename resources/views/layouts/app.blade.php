@@ -49,8 +49,8 @@
 
     <div id="mobileMenu" class="hidden md:hidden border-b border-neutral-100 bg-[#fcfcfc]">
         <div class="max-w-7xl mx-auto px-6 py-6 space-y-4 text-xs uppercase tracking-widest text-neutral-500">
-            <a href="/" class="{{ request()->is('/') ? 'text-neutral-900 border-b border-neutral-900' : 'hover:text-neutral-900 transition-colors' }} pb-1 block">Works</a>
-            <a href="/portofolio/about" class="{{ request()->is('portofolio/about') ? 'text-neutral-900 border-b border-neutral-900' : 'hover:text-neutral-900 transition-colors' }} pb-1 block">About</a>
+            <a href="/" class="{{ request()->is('/') ? 'text-neutral-900 border-b border-neutral-900' : 'hover:text-neutral-900 transition-colors' }} pb-1 block">About</a>
+            <a href="/portofolio/work" class="{{ request()->is('portofolio/work') ? 'text-neutral-900 border-b border-neutral-900' : 'hover:text-neutral-900 transition-colors' }} pb-1 block">Works</a>
             <a href="/admin/dashboard" class="hover:text-neutral-900 transition-colors pb-1 block">Admin</a>
         </div>
     </div>
