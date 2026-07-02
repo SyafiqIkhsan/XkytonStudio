@@ -8,10 +8,10 @@ use App\Http\Controllers\Admin\CommentsController;
 use App\Http\Controllers\Admin\SystemController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [ProjectController::class, 'index'])->name('portofolio.index');
+Route::get('/', [AboutController::class, 'index'])->name('portofolio.index');
 Route::get('/portofolio/show/{slug}', [ProjectController::class, 'show'])->name('portofolio.show');
 Route::post('/project/{project}/comment', [ProjectController::class, 'storeComment'])->name('comment.store');
-Route::get('/portofolio/about', [AboutController::class, 'index'])->name('portofolio.index');
+Route::get('/portofolio/work', [ProjectController::class, 'index'])->name('portofolio.index');
 
 
 

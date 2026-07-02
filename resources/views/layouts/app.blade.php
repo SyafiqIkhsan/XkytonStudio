@@ -33,8 +33,8 @@
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="/" class="font-serif text-xl font-medium tracking-tight">Xkyton</a>
             <nav class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-widest text-neutral-500">
-                <a href="/" class="{{ request()->is('/') ? 'text-neutral-900 border-b border-neutral-900' : 'hover:text-neutral-900 transition-colors' }} pb-1">Works</a>
-                <a href="/portofolio/about" class="{{ request()->is('portofolio/about') ? 'text-neutral-900 border-b border-neutral-900' : 'hover:text-neutral-900 transition-colors' }} pb-1">About</a>
+                <a href="/" class="{{ request()->is('/') ? 'text-neutral-900 border-b border-neutral-900' : 'hover:text-neutral-900 transition-colors' }} pb-1">About</a>
+                <a href="/portofolio/work" class="{{ request()->is('portofolio/work') ? 'text-neutral-900 border-b border-neutral-900' : 'hover:text-neutral-900 transition-colors' }} pb-1">Works</a>
             </nav>
             <div class="flex items-center gap-3">
                 <a href="/admin/dashboard" class="text-xs text-neutral-400 hover:text-neutral-900 transition-colors hidden sm:inline">Admin?</a>

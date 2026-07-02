@@ -20,7 +20,7 @@
 
             <!-- Minimalist Image Box -->
             <div class="w-full aspect-[4/5] bg-neutral-100 border border-neutral-200 flex items-center justify-center p-8">
-                <img src="/public/Syafiq.png" alt="Owner">
+                <img src="/Syafiqbeneran.png" alt="Owner">
             </div>
         </div>
 
