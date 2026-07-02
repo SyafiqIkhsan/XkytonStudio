@@ -9,11 +9,10 @@ use App\Http\Controllers\Admin\SystemController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ProjectController::class, 'index'])->name('portofolio.index');
-Route::get('/project/{slug}', [ProjectController::class, 'show'])->name('portofolio.show');
+Route::get('/portofolio/show/{slug}', [ProjectController::class, 'show'])->name('portofolio.show');
 Route::post('/project/{project}/comment', [ProjectController::class, 'storeComment'])->name('comment.store');
 Route::get('/portofolio/about', [AboutController::class, 'index'])->name('portofolio.index');
-Route::get('/admin/systemset', [SystemController::class, 'index'])->name('system.index');
-Route::get('/admin/comments', [CommentsController::class, 'index'])->name('comments.index');
+
 
 
 
@@ -29,4 +28,7 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
     Route::post('/dashboard/project', [CMSController::class, 'store'])->name('admin.project.store');
     Route::put('/dashboard/project/{project}', [CMSController::class, 'update'])->name('admin.project.update');
     Route::delete('/dashboard/project/{project}', [CMSController::class, 'destroy'])->name('admin.project.destroy');
+    Route::get('/admin/systemset', [SystemController::class, 'index'])->name('system.index');
+    Route::get('/admin/comments', [CommentsController::class, 'index'])->name('comments.index');
+    Route::delete('/admin/comments/{comment}', [CommentsController::class, 'destroy'])->name('admin.comments.destroy');
 });

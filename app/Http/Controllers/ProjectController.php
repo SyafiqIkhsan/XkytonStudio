@@ -18,7 +18,7 @@ class ProjectController extends Controller
     {
         // Eager loading relasi rootComments beserta replies-nya untuk menghemat query (anti N+1)
         $project = Project::with(['rootComments.replies'])->where('slug', $slug)->firstOrFail();
-        return view('projects.show', compact('project'));
+        return view('portofolio.show', compact('project'));
     }
 
     // Menyimpan komentar baru dari publik

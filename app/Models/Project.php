@@ -17,6 +17,12 @@ class Project extends Model
         $this->attributes['slug'] = Str::slug($value);
     }
 
+    // Semua komentar (termasuk balasan)
+    public function comments(): HasMany
+    {
+        return $this->hasMany(Comment::class);
+    }
+
     // Relasi ke tabel komentar (Hanya mengambil komentar utama/bukan balasan di level atas)
     public function rootComments(): HasMany
     {
