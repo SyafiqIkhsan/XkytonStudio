@@ -61,9 +61,10 @@
                     <h3 class="text-xs uppercase tracking-widest font-medium text-neutral-900">Beyond Code</h3>
                     <ul class="space-y-2 text-sm text-neutral-600 font-light">
                         <li>Algorithmic Logic (125 Mensa Index)</li>
-                        <li>Quantitative & Technical Market Analysis</li>
-                        <li>Local Economic Ecosystems Structuring</li>
-                        <li>Historical Social Stratification</li>
+                        <li>Local Economic Ecosystems</li>
+                        <li>Music Theory & Composition</li>
+                        <li>Architectural Photography</li>
+                        <li>Structured Execution & Accountability</li>
                     </ul>
                 </div>
 
